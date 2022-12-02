@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "term"]
   image = "face.jpg"  # path relative to static directory
 
   links = [
-    { hy = { href = "https://researchportal.helsinki.fi/en/persons/tuomas-lauri-aleksanteri-v%C3%A4is%C3%A4nen", text = "Publications", icon = "hy" } },
+    { link = { href = "https://researchportal.helsinki.fi/en/persons/tuomas-lauri-aleksanteri-v%C3%A4is%C3%A4nen", text = "Publications" } },
     { researchgate = "https://www.researchgate.net/profile/Tuomas-Vaeisaenen" },
     { mastodon = "https://vis.social/@waeiski" },
     { twitter = "https://twitter.com/waeiski" },

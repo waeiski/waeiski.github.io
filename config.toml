@@ -18,6 +18,7 @@ disableKinds = ["taxonomy", "term"]
     { link = { href = "https://researchportal.helsinki.fi/en/persons/tuomas-lauri-aleksanteri-v%C3%A4is%C3%A4nen", text = "Publications" } },
     { researchgate = "https://www.researchgate.net/profile/Tuomas-Vaeisaenen" },
     { mastodon = "https://vis.social/@waeiski" },
+    { pixelfed = { href = "https://pixelfed.social/@waeiski", text = "PixelFed", icon = "pixelfed.svg" } },
     { twitter = "https://twitter.com/waeiski" },
     { instagram = "https://instagram.com/waeiski" },
     { github = "https://github.com/waeiski" },

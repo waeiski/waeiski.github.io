@@ -22,6 +22,7 @@ disableKinds = ["taxonomy", "term"]
     { twitter = "https://twitter.com/waeiski" },
     { instagram = "https://instagram.com/waeiski" },
     { github = "https://github.com/waeiski" },
+    { lastfm = "https://last.fm/user/travelli" },
     { linkedin = "https://linkedin.com/in/waeiski" }
     
   ]

@@ -1,33 +1,72 @@
 baseURL = "https://waeiski.github.io/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
 languageCode = "en"
-defaultContentLanguage = "en"
-theme = "lynx"
-title = "Waeiski's link paradise"
-copyright = "Copy, _right?_ :thinking_face:"
-publishdir = "docs"
+language = "en"
+theme = "vncnt-hugo"
+title = "Tuomas Väisänen · A Landing Page"
 
-enableEmoji = true
-disableKinds = ["taxonomy", "term"]
+_merge = "none"
 
-[author]
-  name = "Tuomas Väisänen"
-  headline = "Geospatial expert :earth_africa: Doctoral researcher :male_detective: at the University of Helsinki"
-  image = "face.jpg"  # path relative to static directory
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
 
-  links = [
-    { link = { href = "https://researchportal.helsinki.fi/en/persons/tuomas-lauri-aleksanteri-v%C3%A4is%C3%A4nen", text = "Publications" } },
-    { researchgate = "https://www.researchgate.net/profile/Tuomas-Vaeisaenen" },
-    { mastodon = "https://vis.social/@waeiski" },
-    { pixelfed = { href = "https://pixelfed.social/@waeiski", text = "PixelFed", icon = "pixelfed.svg" } },
-    { twitter = "https://twitter.com/waeiski" },
-    { instagram = "https://instagram.com/waeiski" },
-    { github = "https://github.com/waeiski" },
-    { lastfm = "https://last.fm/user/travelli" },
-    { linkedin = "https://linkedin.com/in/waeiski" }
+[params]
+  author = "Tuomas Väisänen"
+  # email does still work but is deprecated.
+  # use [params.contact.email] instead.
+  #email = "john.doe@example.com"
+  description = "Tuomas Väisänen's details"
+  bio = "I am a post-doctoral researcher in the Digital Geography Lab at the University of Helsinki.  \nHere are linkts to find me on other websites."
+  avatar = "img/face.png"
+  favicon = "img/favicon.ico"
+  error404 = "There is no such page."
+
+  [params.contact]
+    # the default fontawesome style in simple key-value pairs is "fab", i.e. brand icons
+    github = "https://github.com/waeiski"
+    mastodon = "https://vis.social/@waeiski"
+    instagram = "https://instagram.com/waeiski"
+    twitter = "https://twitter.com/waeiski"
+    lastfm = "https://last.fm/user/travelli"
+    linkedin = "https://linkedin.com/in/waeiski"
     
-  ]
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.86.1"
+    # You may use (inline) tables for more versatility
+    # This allows sorting and even more icons.
+    # Just make sure not to mix key-value pairs, inline tables and tables,
+    # although keeping keeping this order is ok.
+    # See https://toml.io/en/v1.0.0 for details
+    0 = { name = "ello", icon = "ello", style = "fab", link = "" } # empty links are possible
+    [params.contact.1] # key names are sorted lexicographically
+      name = "hiking club" # may be omitted. defaults to key name
+      icon = "hiking" # may be omitted. defaults to key name
+      style = "fas" # may be omitted. default = "fas"
+      link = "https://local-hiking.club"
+    [params.contact.email]
+      name = "email" # may be omitted. defaults to key name
+      icon = "envelope" # may be omitted. defaults to key name
+      style = "fas" # may be omitted. default = "fas"
+      link = "mailto:tuomas.vaisanen@helsinki.fi"
+    [params.contact.mastodon]
+      style = "fab" # may be omitted. default = "fas"
+      link = "https://vis.social/@waeiski"
+      # By default rel="me" is not set
+      # For some services, it makes sense to set it though.
+      # This is the case for Mastodon (and Github) if you link back from these services.
+      # See
+      # https://microformats.org/wiki/rel-me and
+      # https://docs.joinmastodon.org/user/profile/#verification
+      # for more information.
+      # This defaults to false to cover the case of not having control over the linked site.
+      rel-me = true
+      

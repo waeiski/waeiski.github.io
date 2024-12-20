@@ -66,7 +66,7 @@ _merge = "none"
     [params.contact.3]
       style = "fas" # may be omitted. default = "fas"
       link = "https://pixelfed.social/@waeiski"
-      icon = "camera"
+      icon = "camera-retro"
       name = "My PixelFed"
       # By default rel="me" is not set
       # For some services, it makes sense to set it though.
@@ -123,7 +123,7 @@ _merge = "none"
       name = "My BlueSky"
       style = "fas" # may be omitted. default = "fas"
       link = "https://bsky.app/profile/waeiski.bsky.social"
-      icon = "cloud-sun"
+      icon = "bluesky"
       # By default rel="me" is not set
       # For some services, it makes sense to set it though.
       # This is the case for Mastodon (and Github) if you link back from these services.

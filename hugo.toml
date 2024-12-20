@@ -64,10 +64,10 @@ _merge = "none"
       # This defaults to false to cover the case of not having control over the linked site.
       rel-me = true
     [params.contact.3]
-      style = "fas" # may be omitted. default = "fas"
-      link = "https://pixelfed.social/@waeiski"
-      icon = "camera-retro"
-      name = "My PixelFed"
+      name = "My BlueSky"
+      style = "fab" # may be omitted. default = "fas"
+      link = "https://bsky.app/profile/waeiski.bsky.social"
+      icon = "bluesky"
       # By default rel="me" is not set
       # For some services, it makes sense to set it though.
       # This is the case for Mastodon (and Github) if you link back from these services.
@@ -77,7 +77,7 @@ _merge = "none"
       # for more information.
       # This defaults to false to cover the case of not having control over the linked site.
       rel-me = true
-    [params.contact.4]
+    [params.contact.3]
       name = "My GitHub"
       style = "fab" # may be omitted. default = "fas"
       link = "https://github.com/waeiski"
@@ -91,11 +91,25 @@ _merge = "none"
       # for more information.
       # This defaults to false to cover the case of not having control over the linked site.
       rel-me = true
-    [params.contact.5]
+    [params.contact.4]
       name = "My ResearchGate"
       style = "fab" # may be omitted. default = "fas"
       link = "https://www.researchgate.net/profile/Tuomas-Vaeisaenen"
       icon = "researchgate"
+      # By default rel="me" is not set
+      # For some services, it makes sense to set it though.
+      # This is the case for Mastodon (and Github) if you link back from these services.
+      # See
+      # https://microformats.org/wiki/rel-me and
+      # https://docs.joinmastodon.org/user/profile/#verification
+      # for more information.
+      # This defaults to false to cover the case of not having control over the linked site.
+      rel-me = true
+    [params.contact.5]
+      style = "fas" # may be omitted. default = "fas"
+      link = "https://pixelfed.social/@waeiski"
+      icon = "camera-retro"
+      name = "My PixelFed"
       # By default rel="me" is not set
       # For some services, it makes sense to set it though.
       # This is the case for Mastodon (and Github) if you link back from these services.
@@ -110,20 +124,6 @@ _merge = "none"
       style = "fab" # may be omitted. default = "fas"
       link = "https://linkedin.com/in/waeiski"
       icon = "linkedin"
-      # By default rel="me" is not set
-      # For some services, it makes sense to set it though.
-      # This is the case for Mastodon (and Github) if you link back from these services.
-      # See
-      # https://microformats.org/wiki/rel-me and
-      # https://docs.joinmastodon.org/user/profile/#verification
-      # for more information.
-      # This defaults to false to cover the case of not having control over the linked site.
-      rel-me = true
-    [params.contact.7]
-      name = "My BlueSky"
-      style = "fab" # may be omitted. default = "fas"
-      link = "https://bsky.app/profile/waeiski.bsky.social"
-      icon = "bluesky"
       # By default rel="me" is not set
       # For some services, it makes sense to set it though.
       # This is the case for Mastodon (and Github) if you link back from these services.

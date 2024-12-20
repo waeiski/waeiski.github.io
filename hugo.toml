@@ -46,7 +46,7 @@ _merge = "none"
     # 0 = { name = "ello", icon = "ello", style = "fab", link = "" } # empty links are possible
     [params.contact.1] # key names are sorted lexicographically
       name = "My publications" # may be omitted. defaults to key name
-      icon = "scroll" # may be omitted. defaults to key name
+      icon = "graduation-cap" # may be omitted. defaults to key name
       style = "fas" # may be omitted. default = "fas"
       link = "https://researchportal.helsinki.fi/en/persons/tuomas-lauri-aleksanteri-v%C3%A4is%C3%A4nen"
     [params.contact.2]
@@ -121,7 +121,7 @@ _merge = "none"
       rel-me = true
     [params.contact.7]
       name = "My BlueSky"
-      style = "fas" # may be omitted. default = "fas"
+      style = "fab" # may be omitted. default = "fas"
       link = "https://bsky.app/profile/waeiski.bsky.social"
       icon = "bluesky"
       # By default rel="me" is not set

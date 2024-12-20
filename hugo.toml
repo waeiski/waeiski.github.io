@@ -29,7 +29,7 @@ _merge = "none"
   # use [params.contact.email] instead.
   #email = "john.doe@example.com"
   description = "Tuomas Väisänen's details"
-  bio = "I am a geographer and a post-doctoral researcher in the Digital Geography Lab at the University of Helsinki. \n\nI am interested in GIScience, urban multilingualism, mobility, and segregation.\n \nHere are links to find me on other websites."
+  bio = "I am a geographer and a post-doctoral researcher in the Digital Geography Lab at the University of Helsinki. \n\nI am interested in GIScience, urban multilingualism, mobility, and segregation. I study them using Python, PostgreSQL, QGIS and big data.\n \nHere are links to find me on other websites."
   avatar = "img/face2.png"
   error404 = "There is no such page."
 
